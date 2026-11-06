@@ -1,10 +1,10 @@
 # Taller Mecánico La Cochera
 
-Base visual responsive para el sitio de Taller Mecánico La Cochera. La interfaz está pensada como una landing de conversión: presenta servicios, genera confianza, explica el proceso y facilita la reserva de una visita.
+Base visual responsive para el sitio de Taller Mecánico La Cochera. La interfaz está pensada como una web de taller local: presenta servicios reales, da información útil, explica el proceso y facilita pedir una cita sin lenguaje exagerado.
 
 ## Dirección visual
 
-La identidad combina una base azul petróleo con naranja seguridad, crema y grafito. El lenguaje visual toma referencias del diseño editorial industrial y de la señalética de taller: titulares condensados, líneas finas, numeración técnica, tarjetas con acentos funcionales y fotografía de alto contraste.
+La identidad combina una base azul petróleo con naranja seguridad, crema y grafito. La dirección evita la estética genérica de landing con mensajes grandilocuentes: usa copy directo, jerarquía editorial sencilla, datos concretos del taller, numeración técnica y fotografía de trabajo.
 
 ## Estructura
 
