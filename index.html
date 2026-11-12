@@ -111,7 +111,7 @@
           <div class="trust-band__intro"><div class="eyebrow eyebrow--light"><span></span> El taller, en números</div><h2>Trabajo claro.<br /><em>Coche cuidado.</em></h2></div>
           <div class="trust-stat"><strong>12<span>+</span></strong><span>Años haciendo<br />las cosas bien</span></div>
           <div class="trust-stat"><strong>4.9<span>/5</span></strong><span>Calificación de<br />nuestros clientes</span></div>
-          <div class="trust-stat"><strong>90<span>%</span></strong><span>De clientes<br />que regresan</span></div>
+          <div class="trust-stat"><strong>2,400<span>+</span></strong><span>Coches atendidos<br />desde 2012</span></div>
         </div>
       </section>
 
@@ -148,9 +148,37 @@
     </main>
 
     <footer class="site-footer">
-      <div class="container footer-main"><div class="footer-brand"><a class="brand brand--footer" href="#inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5.5 34.7 11v9.5c0 9.5-5.6 16.5-10.7 19.1-5.1-2.6-10.7-9.6-10.7-19.1V11L24 5.5Z" stroke="currentColor" stroke-width="2.4"/><path d="m24 12 1.8 5.1 5.2.2-4.1 3.2 1.3 5-4.2-2.9-4.2 2.9 1.3-5-4.1-3.2 5.2-.2L24 12Z" fill="currentColor"/></svg></span><span class="brand-copy"><strong>LA COCHERA</strong><small>TALLER MECÁNICO</small></span></a><p>Mecánica para coches<br />de diario.</p></div><div class="footer-links"><div><small>Explora</small><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#historias">Opiniones</a></div><div><small>Hablemos</small><a href="tel:+523312345678">33 1234 5678</a><a href="mailto:hola@lacocherataller.mx">hola@lacocherataller.mx</a><a href="#agenda">Pedir una cita</a></div><div><small>Social</small><a href="#">Instagram ↗</a><a href="#">Facebook ↗</a></div></div></div>
+      <div class="container footer-main"><div class="footer-brand"><a class="brand brand--footer" href="#inicio"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 48 48" fill="none"><path d="M24 5.5 34.7 11v9.5c0 9.5-5.6 16.5-10.7 19.1-5.1-2.6-10.7-9.6-10.7-19.1V11L24 5.5Z" stroke="currentColor" stroke-width="2.4"/><path d="m24 12 1.8 5.1 5.2.2-4.1 3.2 1.3 5-4.2-2.9-4.2 2.9 1.3-5-4.1-3.2 5.2-.2L24 12Z" fill="currentColor"/></svg></span><span class="brand-copy"><strong>LA COCHERA</strong><small>TALLER MECÁNICO</small></span></a><p>Mecánica para coches<br />de diario.</p></div><div class="footer-links"><div><small>Explora</small><a href="#servicios">Servicios</a><a href="#proceso">Cómo trabajamos</a><a href="#historias">Opiniones</a></div><div><small>Hablemos</small><a href="tel:+523312345678">33 1234 5678</a><a href="mailto:hola@lacocherataller.mx">hola@lacocherataller.mx</a><a href="#agenda">Pedir una cita</a></div><div><small>Social</small><a href="#contacto" data-social-demo>Instagram ↗</a><a href="#contacto" data-social-demo>Facebook ↗</a></div></div></div>
       <div class="container footer-bottom"><span>© 2024 La Cochera Taller Mecánico</span><span>Hecho con oficio en Guadalajara</span><a href="#inicio">Volver arriba ↑</a></div>
     </footer>
+
+    <div class="booking-modal" id="booking-modal" aria-hidden="true">
+      <div class="booking-modal__backdrop" data-close-booking></div>
+      <section class="booking-panel" role="dialog" aria-modal="true" aria-labelledby="booking-title">
+        <button class="panel-close" type="button" data-close-booking aria-label="Cerrar agenda">×</button>
+        <div class="booking-panel__head"><span class="eyebrow"><span></span> Agenda una visita</span><h2 id="booking-title">Pedir una cita<br /><em>sin llamadas eternas.</em></h2><p>Elige una opción y te confirmamos por WhatsApp. Es una demostración: no se envía nada hasta que tú lo pidas.</p></div>
+        <form class="booking-demo" id="booking-demo">
+          <div class="booking-demo__grid">
+            <label>Tu nombre<input name="name" required placeholder="Ej. Ana López" /></label>
+            <label>WhatsApp<input name="phone" required inputmode="tel" placeholder="33 1234 5678" /></label>
+            <label>Servicio<select name="service" required><option value="">Selecciona una opción</option><option>Mantenimiento preventivo</option><option>Diagnóstico</option><option>Frenos y suspensión</option><option>Clima y electricidad</option></select></label>
+            <label>Día preferido<input name="date" type="date" required /></label>
+          </div>
+          <div class="booking-demo__slots"><span>Horario aproximado</span><div><button type="button" class="slot is-selected" data-slot="08:30">08:30</button><button type="button" class="slot" data-slot="10:30">10:30</button><button type="button" class="slot" data-slot="13:00">13:00</button><button type="button" class="slot" data-slot="16:30">16:30</button></div></div>
+          <input type="hidden" name="time" value="08:30" />
+          <button class="button button--primary booking-submit" type="submit">Ver disponibilidad <span>↗</span></button>
+        </form>
+        <div class="booking-loading" aria-live="polite"><span class="loader"></span><strong>Revisando horarios del taller…</strong><small>Esto tarda un momento.</small></div>
+        <div class="booking-success" aria-live="polite"><span class="success-mark">✓</span><strong>Solicitud lista.</strong><p id="booking-summary">Tenemos tu información.</p><a class="button button--dark" id="whatsapp-link" href="https://wa.me/523312345678" target="_blank" rel="noreferrer">Confirmar por WhatsApp <span>↗</span></a><button class="text-link" type="button" data-close-booking>Seguir viendo el sitio <span>↓</span></button></div>
+      </section>
+    </div>
+
+    <aside class="assistant" id="assistant" aria-hidden="true">
+      <div class="assistant__head"><div><strong>La Cochera responde</strong><small>Demo de asistente</small></div><button type="button" id="assistant-close" aria-label="Cerrar asistente">×</button></div>
+      <div class="assistant__messages" id="assistant-messages"><div class="assistant-bubble">Hola. Puedo orientarte antes de que agendes. ¿Qué quieres saber?</div></div>
+      <div class="assistant__options"><button data-assistant-question="¿Qué revisan en un diagnóstico?">Diagnóstico</button><button data-assistant-question="¿Cuánto tarda una revisión?">Tiempos</button><button data-assistant-question="Quiero hablar por WhatsApp">WhatsApp</button></div>
+    </aside>
+    <button class="assistant-toggle" id="assistant-toggle" type="button" aria-expanded="false"><span class="assistant-toggle__dot"></span><span>¿Te orientamos?</span><b>↗</b></button>
     <script src="./app.js" type="module"></script>
   </body>
 </html>
