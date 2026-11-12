@@ -57,7 +57,7 @@ button { cursor: pointer; }
 .button--outline:hover { color: var(--paper); background: var(--petrol); border-color: var(--petrol); }
 
 .hero { position: relative; min-height: 740px; display: flex; align-items: center; color: var(--paper); overflow: hidden; background: var(--petrol-deep); }
-.hero__image { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,27,30,.96) 0%, rgba(7,27,30,.78) 40%, rgba(7,27,30,.2) 78%), url('/manus-storage/taller-la-cochera-hero_f3b15a3c.jpg'); background-size: cover; background-position: center; opacity: .92; }
+.hero__image { position: absolute; inset: 0; background-image: linear-gradient(90deg, rgba(7,27,30,.96) 0%, rgba(7,27,30,.78) 40%, rgba(7,27,30,.2) 78%), url('./assets/taller-la-cochera-hero.png'); background-size: cover; background-position: center; opacity: .92; }
 .hero__grain { position: absolute; inset: 0; pointer-events: none; opacity: .14; background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E"); mix-blend-mode: overlay; }
 .hero__content { position: relative; z-index: 1; display: flex; align-items: center; justify-content: space-between; padding-top: 82px; }
 .hero__copy { max-width: 680px; transform: translateY(-26px); }
