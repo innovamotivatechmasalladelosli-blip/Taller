@@ -4,7 +4,7 @@ Base visual responsive para el sitio de Taller Mecánico La Cochera. La interfaz
 
 ## Dirección visual
 
-La identidad combina una base azul petróleo con naranja seguridad, crema y grafito. La dirección evita la estética genérica de landing con mensajes grandilocuentes: usa copy directo, jerarquía editorial sencilla, datos concretos del taller, numeración técnica y fotografía de trabajo. La imagen principal es una fotografía real de Pexels, optimizada localmente en `assets/taller-real.jpg`; fuente: [Pexels — mechanic shop photos](https://www.pexels.com/search/mechanic%20shop/).
+La identidad combina una base azul petróleo con naranja seguridad, crema y grafito. La dirección evita la estética genérica de landing con mensajes grandilocuentes: usa copy directo, jerarquía editorial sencilla, datos concretos del taller, numeración técnica y fotografía de trabajo. La imagen principal es una fotografía real de Pexels, optimizada localmente en `assets/taller-real.jpg`; fuente: [Pexels — A man checking the white car](https://www.pexels.com/photo/a-man-checking-the-white-car-4116169/).
 
 ## Estructura
 
